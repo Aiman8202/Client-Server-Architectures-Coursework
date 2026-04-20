@@ -40,7 +40,7 @@ public class SensorReadingResource {
                     .build();
         }
 
-        // 🔴 Part 5 requirement (already preparing)
+        // for part 5
         if ("MAINTENANCE".equalsIgnoreCase(sensor.getStatus())) {
         	throw new SensorUnavailableException("Sensor under maintenance");
         }
@@ -49,7 +49,7 @@ public class SensorReadingResource {
                 .computeIfAbsent(sensorId, k -> new ArrayList<>())
                 .add(reading);
 
-        // Side effect: update current value
+        // update current value
         sensor.setCurrentValue(reading.getValue());
 
         return Response.status(Response.Status.CREATED)
