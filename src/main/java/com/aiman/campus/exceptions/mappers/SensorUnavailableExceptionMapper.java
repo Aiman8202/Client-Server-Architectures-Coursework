@@ -1,0 +1,18 @@
+package com.aiman.campus.exceptions.mappers;
+
+import javax.ws.rs.core.Response;
+import javax.ws.rs.ext.ExceptionMapper;
+import javax.ws.rs.ext.Provider;
+
+import com.aiman.campus.exceptions.SensorUnavailableException;
+
+@Provider
+public class SensorUnavailableExceptionMapper implements ExceptionMapper<SensorUnavailableException> {
+
+    @Override
+    public Response toResponse(SensorUnavailableException ex) {
+        return Response.status(Response.Status.FORBIDDEN)
+                .entity("{\"error\": \"" + ex.getMessage() + "\"}")
+                .build();
+    }
+}
