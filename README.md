@@ -82,7 +82,6 @@ http://localhost:8080/api/v1
 
 ```bash
 curl -X POST http://localhost:8080/api/v1/rooms \
-curl -X POST http://localhost:8080/api/v1/rooms \
 -H "Content-Type: application/json" \
 -d '{"id":1,"name":"Lab A","location":"Building 1"}'
 ```
