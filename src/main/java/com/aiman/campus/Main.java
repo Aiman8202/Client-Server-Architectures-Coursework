@@ -1,3 +1,6 @@
+// STUDENT ID: w2076700
+// STUDENT NAME: AIMAN CHOWDHURY
+
 package com.aiman.campus;
 
 import java.net.URI;
@@ -26,7 +29,6 @@ public class Main {
         System.out.println("======================================");
         System.out.println(" Campus Sensor API Started");
         System.out.println(" Base URL: http://localhost:8080/api/v1");
-        System.out.println(" Rooms:   http://localhost:8080/api/v1/rooms");
         System.out.println("======================================");
 
         Runtime.getRuntime().addShutdownHook(new Thread(server::shutdownNow));

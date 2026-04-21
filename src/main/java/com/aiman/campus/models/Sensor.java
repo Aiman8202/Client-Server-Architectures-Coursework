@@ -1,3 +1,6 @@
+// STUDENT ID: w2076700
+// STUDENT NAME: AIMAN CHOWDHURY
+
 package com.aiman.campus.models;
 
 public class Sensor {
